@@ -1,0 +1,17 @@
+{
+  "name": "Galileo",
+  "short_name": "Galileo",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#4e53cf",
+  "icons": [
+    {
+      "src": "/maskable_icon_512.png",
+      "sizes": "512x512",
+      "purpose": "any maskable",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#444444"
+}
