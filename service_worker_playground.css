@@ -1,0 +1,80 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: [first] auto [end];
+  grid-template-rows: [row1-start] min-content [row1-end] auto [last-line];
+}
+
+button {
+  margin: 15px 10px;
+  background-color: #506060;
+  width: 120px;
+}
+
+.toolbox {
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: span end;
+  grid-row-start: 1;
+  grid-row-end: span row1-end;
+}
+
+.tag-label {
+  display: inline-block;
+  width: 170px;
+  text-align: right;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 3px;
+  padding: 4px;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #506060;
+}
+
+.information {
+  padding: 10px;
+  overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: span end;
+  grid-row-start: 2;
+  grid-row-end: span last-line;
+}
+
+.log-tab {
+  overflow: scroll;
+  height: 100%;
+  line-height: 26px;
+}
+
+.log-tab > div {
+  border-top: 1px solid #600000;
+  background-color: #202060;
+}
+
+.log-tab > div.darkcyan {
+  background-color: #005060;
+}
+
+.hidden {
+  display: none;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
