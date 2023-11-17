@@ -1,0 +1,51 @@
+html {
+  overflow: hidden;
+}
+*, .root {
+  background-color: #444444;
+  color: #dddddd;
+  font-family: Monaco, monospace;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+#game {
+  background-color: #eeeedd;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#score {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.egg-white {
+  border: 1px solid gray;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.egg-yolk {
+  border: 1px solid black;
+  position: absolute;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
